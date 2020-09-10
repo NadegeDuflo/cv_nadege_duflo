@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Santana";
+  src: url("../ressources/police/Santana.ttf") format("truetype");
+}
+@font-face {
+  font-family: "England";
+  src: url("../ressources/police/England.ttf") format("truetype");
+}
+@font-face {
+  font-family: "advent";
+  src: url("../ressources/police/advent.otf") format("opentype");
+}
+@font-face {
+  font-family: "Amatic";
+  src: url("../ressources/police/Amatic.ttf") format("truetype");
+}
+html {
+  font-size: 62.5%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f7f6;
+  font-family: "advent", "arial";
+  font-size: 2rem;
+}
+
+section {
+  text-align: center;
+  padding: 50px 0 100px;
+}
+
+hr {
+  width: 30%;
+  color: #1d1d1d;
+  opacity: 0.3;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: "Amatic";
+  font-size: 5rem;
+  color: #1d1d1d;
+  margin: 50px;
+}
+h3::before {
+  content: "~ ";
+  font-family: "Amatic";
+  font-size: 4rem;
+  position: relative;
+  top: 10px;
+}
+h3::after {
+  content: " ~";
+  font-family: "Amatic";
+  font-size: 4rem;
+  position: relative;
+  top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#navigation {
+  width: 100%;
+  position: fixed;
+  background: #f1f1f1;
+  height: 80px;
+  align-items: center;
+  box-shadow: 0 3px 10px -1px #f1f1f1;
+  z-index: 2;
+}
+#navigation ul {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+#navigation ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+#navigation ul li a {
+  text-decoration: none;
+  font-family: "Amatic";
+  font-size: 4rem;
+  color: #1d1d1d;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+#navigation ul li a:hover {
+  font-size: 4.5rem;
+  color: goldenrod;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: #1d1d1d;
+}
+header h1 {
+  color: #f1f1f1;
+  font-family: "Santana";
+  font-size: 15rem;
+  letter-spacing: 5px;
+  padding-top: 150px;
+  margin: 0 auto 100px auto;
+}
+header h2 {
+  color: #f1f1f1;
+  font-family: "England";
+  font-size: 7rem;
+}
+header #logo {
+  width: 50px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+#valeur {
+  width: 100%;
+  height: 400px;
+}
+
+#projet .containerProjet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#projet .containerProjet .projet {
+  width: 400px;
+  margin: 30px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#projet .containerProjet .projet:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#projet .containerProjet .projet .picture {
+  width: 100%;
+  height: 266px;
+  overflow: hidden;
+}
+#projet .containerProjet .projet .picture img {
+  min-width: 100%;
+  height: 100%;
+}
+#projet .containerProjet .projet h4 {
+  text-transform: uppercase;
+  margin: 10px auto 0;
+}
+#projet .containerProjet .projet .dateProjet {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+#contact p {
+  margin: 50px auto;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #1d1d1d;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 40px 0;
+}
+footer .copyDate {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
