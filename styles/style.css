@@ -110,6 +110,12 @@ header {
   height: 800px;
   text-align: center;
   background: #1d1d1d;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+header canvas {
+  display: inline-block;
 }
 header h1 {
   color: #f1f1f1;
@@ -117,18 +123,29 @@ header h1 {
   font-size: 15rem;
   letter-spacing: 5px;
   padding-top: 150px;
-  margin: 0 auto 100px auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header h2 {
   color: #f1f1f1;
   font-family: "England";
   font-size: 7rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header #logo {
   width: 50px;
   background: #f1f1f1;
   padding: 10px;
   border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 50px auto;
 }
 
